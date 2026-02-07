@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Partículas flotantes de fondo -->
+<div class="hearts-container" id="heartsContainer"></div>
+
+<div class="scene">
+    <div class="card">
+        <!-- Efecto de brillo en el borde -->
+        <div class="card-glow"></div>
+        
+        <!-- Contenido de la tarjeta -->
+        <div class="card-content">
+            <!-- Imagen animada -->
+            <div class="emoji-container" id="emojiContainer">
+                <img class="emoji" id="emoji" src="images/imagen1.jpg" alt="Expresión">
+            </div>
+
+            <h2 class="question" id="texto">¿Quieres ser mi San Valentín mi amoi?</h2>
+            <div class="heart-divider">
+                <span>💖</span>
+            </div>
+
+            <div class="buttons" id="buttonsContainer">
+                <button class="btn btn-yes" id="yesBtn">
+                    <span class="btn-text">Sí</span>
+                    <span class="btn-icon">❤️</span>
+                </button>
+                <button class="btn btn-no" id="noBtn">
+                    <span class="btn-text">No</span>
+                    <span class="btn-icon">😢</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Confeti para celebración -->
+<canvas id="confetti"></canvas>
+
+<!-- Footer con créditos -->
+<footer class="footer">
+    <p class="footer-made">Hecho con amor por Gama para mi Moniquita piciosa</p>
+    <p class="footer-note"></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
